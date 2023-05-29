@@ -46,7 +46,7 @@ fun App() {
                 DataManager.switchPages(it)
             }
         } else {
-            DataManager.currentShop?.let { QuoteDetail(shop = it) }
+            DataManager.currentShop?.let { ShopDetails(shop = it) }
         }
     } else {
         Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize(1f)) {
